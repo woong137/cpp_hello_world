@@ -89,9 +89,9 @@ message(STATUS "")
 # add_subdirectory(${${PROJECT_NAME}_THIRDPARTY_PATH})
 # add_subdirectory(${${PROJECT_NAME}_MODULE_PATH})
 # add_subdirectory(${${PROJECT_NAME}_APPLICATION_PATH})
-
 set(${PROJECT_NAME}_SOURCE_FILES
   src/utils.cpp
+
   # ! Add source files here
 )
 
@@ -109,8 +109,9 @@ add_library(${PROJECT_NAME} STATIC
 target_include_directories(${PROJECT_NAME} PUBLIC
   ${${PROJECT_NAME}_INCLUDE_PATH}
 
-# ! Add include path here
+  # ! Add include path here
 )
+
 # target_link_libraries(${PROJECT_NAME} PRIVATE
 
 # ! Add libraries here
